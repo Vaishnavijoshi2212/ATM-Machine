@@ -1,0 +1,36 @@
+<div class="box-section">
+    <div class="container">
+        <!-- <div class="d-flex card-deck"  *ngFor="let item of imageData">
+            <div class="card">
+                <img [src]="item.url" alt="Item Image" class="card-img text-center">
+                 <div class="card-body"><br>
+                     <h5 class="card-title">{{ item.itemName }}</h5>
+                        <p class="card-text">Price: {{ item.itemPrice }}</p>
+                     <p class="card-text">Barcode: {{ item.itemBarcode }}</p>
+                 </div>
+            </div>
+        </div> -->
+
+        <div class="row">
+            <div class="col-6 mb-3" *ngFor="let item of imageData">
+                <div class="card h-100">
+                    <div class="img-section">
+                        <img [src]="item.url" alt="Item Image" class="img-fluid card-img text-center">
+                    </div>
+                    
+                    <div class="card-body">
+                        
+                        <div class="text-part">
+                            <h5 class="card-title">{{ item.itemName }}</h5>
+                            <p class="card-text">Price: {{ item.itemPrice }}</p>
+                             <p class="card-text">Barcode: {{ item.itemBarcode }}</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+
+</div>
+
