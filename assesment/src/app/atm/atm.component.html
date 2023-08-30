@@ -1,0 +1,70 @@
+<div class="container jumbotron">
+    <h1 class="atm">ATM</h1>
+    <hr>
+    <p class="denomination">Current Available Denomination in Machine</p>
+
+    <table class="table table-striped">
+        <tbody>
+            <tr>
+                <th scope="row">2000</th>
+                <td *ngIf="twohundred">{{ twohundred }}</td>
+                <td>|</td>
+                <td><input type="text" class="form-control" placeholder="0"
+                        [(ngModel)]="twoThousand" /></td>
+            </tr>
+            <tr>
+                <th scope="row">500</th>
+                <td *ngIf="fivehundred">{{ fivehundred }}</td>
+                <td>|</td>
+                <td><input type="text" id="typeText" class="form-control"
+                        placeholder="0"
+                        [(ngModel)]="fiveHundred" /></td>
+            </tr>
+            <tr>
+                <th scope="row">200</th>
+                <td *ngIf="twohundred">{{ twohundred }}</td>
+                <td>|</td>
+                <td><input type="text" id="typeText" class="form-control"
+                        placeholder="0"
+                        [(ngModel)]="twoHundred" /></td>
+            </tr>
+            <tr>
+                <th scope="row">100</th>
+                <td *ngIf="onehundred">{{ onehundred}}</td>
+                <td>|</td>
+                <td><input type="text" id="typeText" class="form-control"
+                        placeholder="0"
+                        [(ngModel)]="oneHundred" /></td>
+            </tr>
+            <tr>
+                <th scope="row">Total</th>
+                <td>{{ total }}</td>
+                <td>|</td>
+                <td><button (click)="getTotalValue()" type="button"
+                        class="btn btn-primary">Deposit</button></td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <div class="input-group mb-3">
+        <input type="text" class="form-control rounded-start rounded-0"
+            placeholder="0" 
+            aria-describedby="button-addon2">
+        <button (click)="getWithDraw()"  class="btn btn-outline-secondary btn-success" type="button" 
+            id="button-addon2">Withdraw!</button>
+    </div>
+    <hr />
+
+    <div class="log-section">
+        <h3>Log</h3>
+
+        <div class="log-sec-inner">
+            <div class="bg-light-blue border-light-blue p-4">
+                <p>{{ errname }}</p>
+                <p>{{ total }}</p>
+                <p>{{ todaydate }}</p>
+            </div>
+        </div>
+    </div>
+
+</div>

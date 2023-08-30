@@ -1,0 +1,61 @@
+.container{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+
+    background-color: #eee;
+
+}
+.nav-link{
+    font-size: larger;
+    color: white;
+}
+
+.img-section img {
+    height: 120px;
+    object-fit: cover;
+    object-position: top;
+}
+th td{
+    font-size: 14px;
+    position: fixed;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+
+
+.card-atm{
+    background-color: red;
+    background: transparent;
+}
+
+h1{
+    font-size: 30px;
+
+}
+p{
+    font-size: 20px;
+    
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    
+    border-top: 1px solid #eee;
+}
+
+.bg-light-blue{
+    background-color: #d9edf7;
+}
+.border-light-blue{
+    border: 1px solid #bce8f1;
+}
